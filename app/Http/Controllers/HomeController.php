@@ -12,7 +12,7 @@ class HomeController extends Controller
     {
         $posts = Movie::getMovie();
         return view('index', [
-            "title" => "Arjuna 21",
+            "title" => "KlikTiket",
             'posts' => $posts,
             "active" => 'home'
         ]);

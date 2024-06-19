@@ -9,11 +9,11 @@ class TheaterController extends Controller
 {
     public function index()
     {
-        $city_id = 2;
+        $city_id = 10;
         $cities = Movie::getCities();
         $city = Movie::getCitiesId($city_id);
         $theater = Movie::getTheaters($city_id);
-        $schedules = Movie::getSchedules($theater["XXI"][2]['id']);
+        $schedules = Movie::getSchedules($theater["XXI"][10]['id']);
         $infotheater = $schedules['theater'];
         $posts = $schedules['schedules'];
 
