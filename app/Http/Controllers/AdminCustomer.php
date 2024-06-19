@@ -87,24 +87,7 @@ class AdminCustomer extends Controller
      * @param  \App\Models\Dashboard  $dashboard
      * @return \Illuminate\Http\Response
      */
-    public function update($id, Request $request, Dashboard $dashboard)
-    {
-        $user = User::where('id', '=', $id)->first();
-        $data = $request->validate([
-            'name' => 'required|max:255',
-            'username' => ($request->username == $user->username) ?  'required|min:3|max:255' : 'required|min:3|max:255|unique:users',
-            'email' => ($request->email == $user->email) ?  'required|email' : 'required|email|unique:users',
-            'address' => 'nullable|max:255',
-            'no_telphone' => 'nullable|max:255',
-        ]);
-        if ($request->file('image')) {
-            $data['image'] = $request->file('image')->store('img', ['disk' => 'img']);
-        }
-
-        User::where('id', '=', $id)->update($data);
-
-        return back()->with('messege', 'Customer has been updated!');
-    }
+    
 
     /**
      * Remove the specified resource from storage.

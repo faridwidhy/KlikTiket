@@ -63,11 +63,6 @@
                                            </form>
                                         
                                     </div>
-                                    <div class="col-lg-6">
-                                        <a href="/dashboard/customers/{{{$user->id}}}/edit" class="badge badge-edit text-white bg-warning rounded-pill d-inline">
-                                            edit
-                                        </a>
-                                    </div>
                                 </div>
                                 
                             </td>
