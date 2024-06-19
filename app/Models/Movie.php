@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Movie extends Model
 {
     use HasFactory;
-    protected static $urlApi = "http://146.190.198.36:3000/";
+    protected static $urlApi = "http://localhost:3000/";
 
     public static function getMovie()
     {
