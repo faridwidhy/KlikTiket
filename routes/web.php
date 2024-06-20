@@ -13,7 +13,6 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\DetailController;
-use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MemberOrders;
@@ -72,8 +71,6 @@ Route::get('/schedules/{theater}/{id}', function ($theater, $id) {
     return $schedules;
 });
 
-Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
-Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 
 Route::post('payments/midtrans-notification', [PaymentCallbackController::class, 'receive']);
 Route::post('search', [AjaxController::class, 'ajaxSearch'])->name('search');
