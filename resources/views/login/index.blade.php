@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="/img/logo2.jpg">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
@@ -75,16 +75,13 @@
                 <label for="password">Password: </label>
                 <input type="password" class="form-control" name="password" id="password" required placeholder="Password" required>
               </div>
-              <button type="submit" class="btn btn-primary w-100" name="submit">Login</button>
+              <button type="submit" class="btn btn-primary mb-3 w-100" name="submit">Login</button>
                 <hr>
             </form>
-            <a href="{{ url('auth/google') }}">
-              <button class="btn btn-light w-100" name="submit">Login with Google</button>
-            </a>
           </div>
           <p class="text-center text-white" style="font-size: 14px;">Belum memiliki akun? <a href="/register" style="text-decoration: none;">Register Sekarang!</a></p>
           <div class="card-footer text-center text-white">
-            <small>&copy; 2022 Arjuna</small>
+            <small>&copy; 2024 KlikTiket</small>
           </div>
         </div>
       </div>
