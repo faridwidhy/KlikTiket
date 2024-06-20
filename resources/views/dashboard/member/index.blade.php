@@ -48,7 +48,7 @@
                         <th>Name</th>
                         <th>Movie</th>
                         <th>Price</th>
-                        <th>Status</th>
+    
                     </tr>
                 </thead>
                 <tbody>

@@ -50,9 +50,7 @@
                             <td>
                                 <p class="text-muted mb-0">{{$user->address}}</p>
                             </td>
-                            <td>
-                                
-                            </td>
+                            
                         </tr>
                     @endforeach
                 </tbody>

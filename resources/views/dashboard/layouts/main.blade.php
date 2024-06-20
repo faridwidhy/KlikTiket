@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{$title}}</title>
     <link rel="stylesheet" href="/css/admin.css">
-    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="/img/logo2.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
@@ -80,7 +80,7 @@
                         row.empty()
                         var method = '@method('DELETE') @csrf';
                         $.each(data, function(index, value){
-                            row.append("<tr><td><div class='d-flex align-items-center'><img src='/"+value.image+"' alt='' style='width: 45px; height: 45px;' class='rounded-circle'><div class='ms-3'><p class='fw-bold mb-1'>"+value.name+"</p><p class='text-muted mb-0'>"+value.email+"</p></div></div></td><td><p class='text-muted mb-0'>"+value.username+"</p></td><td><p class='text-muted mb-0'>"+value.no_telphone+"</p></td><td><p class='text-muted mb-0'>"+value.address+"</p></td><td><div class='row w-100'><div class='col-lg-6'><form action='/dashboard/customers/"+value.id+"' method='POST'>"+ method +"<button type='submit' onclick='return confirm('Are you sure?')' class='badge badge-delete text-white bg-danger rounded-pill d-inline'>delete</button></form></div><div class='col-lg-6'><a href='/dashboard/customers/"+value.id+"/edit' class='badge badge-edit text-white bg-warning rounded-pill d-inline'>edit</a></div></div></td></tr>")
+                            row.append("<tr><td><div class='d-flex align-items-center'><img src='/"+value.image+"' alt='' style='width: 45px; height: 45px;' class='rounded-circle'><div class='ms-3'><p class='fw-bold mb-1'>"+value.name+"</p><p class='text-muted mb-0'>"+value.email+"</p></div></div></td><td><p class='text-muted mb-0'>"+value.username+"</p></td><td><p class='text-muted mb-0'>"+value.no_telphone+"</p></td><td><p class='text-muted mb-0'>"+value.address+"</p></td></tr>");
                         });
                     } else if(currUrl == '/dashboard/orders') {
                         row.empty()

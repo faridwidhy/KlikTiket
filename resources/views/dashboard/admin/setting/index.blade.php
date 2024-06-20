@@ -16,8 +16,7 @@
         </div>
         <div class="d-flex justify-content-center my-3 bg-light bg-gradient">
             <div class="avatar p-4">
-                <img src="/{{$auth->image}}" class="rounded-circle shadow-4"
-  style="width: 150px;" alt="Avatar" />
+                <img src="/{{$auth->image}}" class="rounded-circle shadow-4"    style="width: 150px;" alt="Avatar" />
             </div>
         </div>
         <hr>
