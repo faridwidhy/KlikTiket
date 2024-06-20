@@ -14,11 +14,11 @@
                 <div class="d-flex align-items-center col-12 col-lg-8 col-md-8">
                     <img src="/img/logo.jpg" alt="" style="width: 45px; height: 45px;" class="rounded-circle">
                     <div class="ms-3">
-                        <p class="fw-bold mb-0">Arjuna21</p>
-                        <p class="text-muted mb-0">billing@mail.arjuna-mc.site</p>
+                        <p class="fw-bold mb-0">KlikTiket</p>
+                        <p class="text-muted mb-0">KlikTiket@gmail.com</p>
                     </div>
                 </div>
-                <p class="text-muted mb-0 col mt-2">Jl. Gegerkalong Tengah No.6F, Gegerkalong, Kec. Sukasari, Kota Bandung, Jawa Barat 40153</p>
+                <p class="text-muted mb-0 col mt-2">Jalan intan jaya, Kecamaatan Pasar Rebo, Jakarta Timur</p>
             </div>
 
             <div class="d-flex row invoice mt-3 justify-content-between purple-gradient color-block z-depth-1">

@@ -113,7 +113,7 @@ class Dashboard extends Model
             [
                 'title' => 'Sign Out',
                 'icon' => 'log-out',
-                'link' => '/logout'
+                'link' => '/'
             ],
         ];
         return $navbar;

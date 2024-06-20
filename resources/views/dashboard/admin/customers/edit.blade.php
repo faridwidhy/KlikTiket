@@ -21,7 +21,7 @@
             </div>
         </div>
         <hr>
-        <form action="/dashboard/customers/{{$user->id}}" enctype="multipart/form-data" method="POST">
+        <form action="/dashboard/customers/{{$user->id}}" enctype="multipart/form-data" method="put">
             @method('put')
             @csrf
             <div class="row">
