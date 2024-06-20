@@ -2,7 +2,7 @@
     <ul>
         <li>
             <a href="">
-                <span class="icon"><img src="/img/logo2.jpg" alt="" style="width: 40px; height: 40px;" class="rounded-circle"></span>
+                <span class="icon"><img src="/img/logomain.png" alt="" style="width: 40px; height: 40px;" class="rounded-circle"></span>
                 <span class="title mt-1">KlikTiket</span>
             </a>
         </li>

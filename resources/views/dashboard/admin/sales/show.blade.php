@@ -12,13 +12,13 @@
         <div class="recentOrders col-lg-8 p-3" style="min-height: calc(100vh - 60px);">
             <div class="cardHeader row">
                 <div class="d-flex align-items-center col-12 col-lg-8 col-md-8">
-                    <img src="/img/logo.jpg" alt="" style="width: 45px; height: 45px;" class="rounded-circle">
+                    <img src="/img/logomain.png" alt="" style="width: 45px; height: 45px;" class="rounded-circle">
                     <div class="ms-3">
-                        <p class="fw-bold mb-0">Arjuna21</p>
-                        <p class="text-muted mb-0">billing@mail.arjuna-mc.site</p>
+                        <p class="fw-bold mb-0">KlikTiket</p>
+                        <p class="text-muted mb-0">KlikTiket@gmail.com</p>
                     </div>
                 </div>
-                <p class="text-muted mb-0 col mt-2">Jl. Gegerkalong Tengah No.6F, Gegerkalong, Kec. Sukasari, Kota Bandung, Jawa Barat 40153</p>
+                <p class="text-muted mb-0 col mt-2">Jalan intan jaya, Kecamatan Pasar Rebo, Jakarta Timur</p>
             </div>
 
             <div class="d-flex row invoice mt-3 justify-content-between purple-gradient color-block z-depth-1">
@@ -148,11 +148,7 @@
                     </div>
                     <hr>
                     <p class="address text-muted">{{$detail->user->address}}</p>
-                    <div class="view d-flex justify-content-center">
-                        <a href="/dashboard/customers/{{$detail->user->id}}/edit" class="text-decoration-none w-100">
-                            <button class="btn btn-info w-100 py-2" style="color: #ffffff;">View Customer</button>
-                        </a>
-                    </div>
+                    <p class="address text-muted">{{$detail->user->no_telphone}}</p>
                     
                 </div>
                 <div class="col-12 customer-details p-3">
