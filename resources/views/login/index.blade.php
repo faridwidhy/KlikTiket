@@ -62,7 +62,7 @@
           <div class="card-body">
             <form action="/login" method="post" class="text-white">
               @csrf
-              <div class="form-group">
+              <div class="form-group mb-3">
                 <label for="email">Email: </label>
                 <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" autofocus required value="{{ old('email') }}" placeholder="name@example.com">
                 @error('email')
@@ -71,13 +71,9 @@
                   </div>
                 @enderror
               </div>
-              <div class="form-group">
+              <div class="form-group mb-3">
                 <label for="password">Password: </label>
                 <input type="password" class="form-control" name="password" id="password" required placeholder="Password" required>
-              </div>
-              <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" name="remember" class="custom-control-input" id="remember">
-                <label class="custom-control-label" for="remember">Remember Me</label>
               </div>
               <button type="submit" class="btn btn-primary w-100" name="submit">Login</button>
                 <hr>

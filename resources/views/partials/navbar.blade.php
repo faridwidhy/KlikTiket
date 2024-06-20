@@ -28,7 +28,6 @@
           <a class="nav-link {{ ($active === "order") ? 'active' :  ''}}" aria-current="page" href="/order">Buy Tiket</a>
         </li>
       </ul>
-      </ul>
       <form action="/search" class="d-flex" method="get">
         <input id="searchnav" class="keyword form-control me-2" type="text" placeholder="search movie, theater ..." name="keyword" aria-label="Search" size="20" autocomplete="off">
         <button class="tombol-cari btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
