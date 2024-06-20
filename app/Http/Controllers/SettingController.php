@@ -74,7 +74,16 @@ class SettingController extends Controller
      */
     public function edit($id)
     {
-        //
+        $auth = auth()->user();
+        $listnavitem = $auth->is_admin ? Dashboard::getNav() : Dashboard::getNavUser();
+        $user = User::findOrFail($id);
+
+        return view($auth->is_admin ? 'dashboard.admin.setting.edit' : 'dashboard.member.setting.edit', [
+            'title' => 'Edit Profile',
+            'listnav' => $listnavitem,
+            'auth' => $auth,
+            'user' => $user,
+        ]);
     }
 
     /**

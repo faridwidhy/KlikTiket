@@ -113,4 +113,5 @@ Route::middleware('auth')->group(function () {
     Route::resource('/dashboard/member/password', PasswordController::class);
     Route::resource('/dashboard/password', PasswordController::class);
     Route::get('/dashboard/tiket/{id}', [TicketController::class, 'index']);
+    Route::resource('/dashboard/customers', SettingController::class);
 });

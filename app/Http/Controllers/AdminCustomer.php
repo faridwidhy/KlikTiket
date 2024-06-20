@@ -88,7 +88,31 @@ class AdminCustomer extends Controller
      * @return \Illuminate\Http\Response
      */
     
-
+     public function update(Request $request, $id)
+     {
+         $user = User::where('id', '=', $id)->first();
+         $data = $request->validate([
+             'name' => 'required|max:255',
+             'username' => ($request->username == $user->username) ?  'required|min:3|max:255' : 'required|min:3|max:255|unique:users',
+             'email' => ($request->email == $user->email) ?  'required|email' : 'required|email|unique:users',
+             'address' => 'nullable|max:255',
+             'no_telphone' => 'nullable|max:255',
+         ]);
+ 
+         if ($request->file('image')) {
+             // Delete the old image if exists
+             if ($user->image && File::exists(public_path($user->image))) {
+                 File::delete(public_path($user->image));
+             }
+             // Store the new image
+             $data['image'] = $request->file('image')->store('img', ['disk' => 'img']);
+         }
+ 
+         $user->update($data);
+ 
+         return redirect()->route('customers.index')->with('messege', 'Customer profile has been updated!');
+     }
+     
     /**
      * Remove the specified resource from storage.
      *
