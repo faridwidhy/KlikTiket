@@ -5,9 +5,6 @@
 <div class="row p-5" style="min-height: 90vh">
     <div class="detail-img col-lg-3 ">
         <img src="{{ $movie['bannerUrl'] }}" alt="" class="rounded w-100">
-        <a href="/order" class="w-100">
-            <button type="button" class="btn btn-light w-100 rounded-0 fs-5 fw-semibold"><i class="bi fs-3 bi-ticket-perforated"></i> <span class="ml-3"></span> Buy Ticket</button>
-        </a>
     </div>
     <div class="col-lg-8 text-light" style="margin-left: 20px;">
         <div class="detail row">

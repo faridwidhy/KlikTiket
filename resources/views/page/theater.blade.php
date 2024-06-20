@@ -41,7 +41,7 @@
           <option>Pilih Theaters</option>
           @foreach ($theaters['XXI'] as $theater)
 
-          @if ($theater['id'] == 'BDGCIWL') {
+          @if ($theater['id'] == 'JKTAETB') {
             <option selected id="{{ $theater['id'] }}" >{{ $theater['name'] }}</option>
           }   
 
