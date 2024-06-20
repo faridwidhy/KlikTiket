@@ -14,13 +14,14 @@ class DashboardController extends Controller
     {
 
         $users = User::latest('created_at')->get();
-        $earning = Dashboard::getEarning();
+        $earning = Dashboard::getEarning(); 
         $sales = Dashboard::getSales();
         $auth = auth()->user();
         $orders = Dashboard::getRecentOrder();
         $ordersMember = $orders->where('user_id', '=', $auth->id);
 
         if ($auth->is_admin) {
+            $users = User::latest('created_at')->where('is_admin', false)->get();
             $listnavitem = Dashboard::getNav();
             return view('dashboard.admin.index', [
                 'title' => 'Dashboard',

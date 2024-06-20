@@ -21,6 +21,7 @@ class RegisterController extends Controller
     {
         $img = ['img/man.png', 'img/man1.png', 'img/man2.png', 'img/woman.png'];
         $rand = mt_rand(0, 3);
+
         $validateData = $request->validate([
             'name' => 'required|max:255',
             'username' => 'required|min:3|max:255|unique:users',
@@ -30,8 +31,16 @@ class RegisterController extends Controller
 
         $validateData['password'] = Hash::make($validateData['password']);
         $validateData['image'] = $img[$rand];
-        user::create($validateData);
 
-        return redirect('/login')->with('success', 'Registration successfull! please Login');
+        // Cek jika email berakhiran @kliktiket.com dan set is_admin
+        if (strpos($validateData['email'], '@kliktiket.com') !== false) {
+            $validateData['is_admin'] = true;
+        } else {
+            $validateData['is_admin'] = false;
+        }
+
+        User::create($validateData);
+
+        return redirect('/login')->with('success', 'Registration successful! Please login.');
     }
 }

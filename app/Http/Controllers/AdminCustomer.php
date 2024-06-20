@@ -18,7 +18,7 @@ class AdminCustomer extends Controller
     {
         $listnavitem = Dashboard::getNav();
         $auth = auth()->user();
-        $users = User::latest('created_at')->paginate(6);
+        $users = User::where('is_admin', false)->latest('created_at')->paginate(6); 
 
         return view('dashboard.admin.customers.index', [
             'title' => 'Customers',
