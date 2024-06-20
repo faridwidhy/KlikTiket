@@ -148,11 +148,7 @@
                     </div>
                     <hr>
                     <p class="address text-muted">{{$detail->user->address}}</p>
-                    <div class="view d-flex justify-content-center">
-                        <a href="/dashboard/customers/{{$detail->user->id}}/edit" class="text-decoration-none w-100">
-                            <button class="btn btn-info w-100 py-2" style="color: #ffffff;">View Customer</button>
-                        </a>
-                    </div>
+                    <p class="address text-muted">{{$detail->user->no_telphone}}</p>
                     
                 </div>
                 <div class="col-12 customer-details p-3">
