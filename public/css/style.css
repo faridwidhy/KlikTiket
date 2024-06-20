@@ -17,10 +17,8 @@ nav .container {
 }
 
 .navbar-brand h3 {
-  font-family: 'Zen Dots';
-  color: #ffffff;
-  text-shadow: 0px 0px 10px rgb(0, 162, 255);
-
+  font-family: 'Zen Dots', cursive;
+  color: #E50000;
 }
 
 nav {
@@ -142,7 +140,7 @@ footer {
 }
 
 .order {
-  background-color: #121926;
+  background-color: #0F0F0F;
   box-shadow: rgba(22, 22, 24, 0.2) 0px 7px 29px 0px;
 }
 

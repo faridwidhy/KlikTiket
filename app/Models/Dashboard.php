@@ -111,7 +111,7 @@ class Dashboard extends Model
 
             ],
             [
-                'title' => 'Sign Out',
+                'title' => 'Back To Home',
                 'icon' => 'log-out',
                 'link' => '/'
             ],

@@ -110,7 +110,7 @@ class AdminCustomer extends Controller
  
          $user->update($data);
  
-         return redirect()->route('customers.index')->with('messege', 'Customer profile has been updated!');
+         return redirect()->route('customers.index')->with('messege', 'Profile has been updated!');
      }
      
     /**
@@ -121,9 +121,6 @@ class AdminCustomer extends Controller
      */
     public function destroy($id, Dashboard $dashboard)
     {
-        $user = User::where('id', '=', $id)->first();
-        User::destroy($user->id);
 
-        return back()->with('messege', 'Customer has been deleted!');
     }
 }

@@ -27,7 +27,6 @@
                         <th>Username</th>
                         <th>Phone Number</th>
                         <th>Address</th>
-                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -52,18 +51,6 @@
                                 <p class="text-muted mb-0">{{$user->address}}</p>
                             </td>
                             <td>
-                                <div class="row w-100">
-                                    <div class="col-lg-6">
-                                        <form action="/dashboard/customers/{{{$user->id}}}" method="POST">
-                                            @method('DELETE')
-                                            @csrf
-                                            <button type="submit" onclick="return confirm('Are you sure?')" class="badge badge-delete text-white bg-danger rounded-pill d-inline">
-                                                delete
-                                            </button>               
-                                           </form>
-                                        
-                                    </div>
-                                </div>
                                 
                             </td>
                         </tr>
